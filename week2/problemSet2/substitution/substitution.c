@@ -41,7 +41,7 @@ int main(int argc, string argv[])
     }
     // getting the message
     userInput = get_string("plaintest: ");
-    // crypting it
+    // encrypting it
     printf("ciphertext: ");
     replaceLetters(key, userInput);
 }
@@ -70,7 +70,7 @@ void replaceLetters(string key, string userInput)
         }
         else
         {
-            // if the user enter something like "*^%^$#@" it will be printed as it is without ecrypting
+            // if the user enter something like "*^%^$#@" it will be printed as it is without encrypting
             printf("%c", userInput[i]);
         }
     }
